@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: content/images
+site_url: https://muncleblog.netlify.app
+collections:
+- name: blogs 
+  label: Blogs
+  label_singular: Blog
+  folder: blogs
+  create: true
+  editor:
+    preview: false
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  path: '{{slug}}/index'
+  media_folder: ''
+  summary: "TITLE: {{title}}, LANG: {{language}}, POSTED: {{day}}/{{month}}/{{year}}"
+  fields:
+    - label: Title
+      name: title
+      widget: string
+      pattern: ['.{2,30}', "Must be between 2 and 30 characters"]
+    - label: Featured Image
+      name: featured_image
+      widget: image
+    - label: Category
+      name: "category"
+      widget: "select"
+      options: ["Code", "Dogs", "Mental Health", "General"]
+      default: ["Code"]
+    - label: Date
+      name: date
+      widget: datetime
+    - label: Body
+      name: body
+      widget: markdown
