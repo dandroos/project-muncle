@@ -10,7 +10,7 @@ const SocialBar = () => {
           return (
             <Grid item xs={12} md={4}>
               <Button startIcon={<i.icon />} fullWidth>
-                {i.label}
+                I'm on {i.label}!
               </Button>
             </Grid>
           )

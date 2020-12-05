@@ -60,8 +60,8 @@ const Layout = ({ children, dispatch }) => {
         <Toolbar>
           <Box my={1} width="65%" maxWidth={500}>
             <Typography
-              variant={isMobile ? "h4" : "h2"}
-              variantMapping={{ h4: "h1", h2: "h1" }}
+              variant={isMobile ? "h4" : "h3"}
+              variantMapping={{ h4: "h1", h3: "h1" }}
               style={{
                 textTransform: "uppercase",
                 fontWeight: 800,
@@ -81,6 +81,8 @@ const Layout = ({ children, dispatch }) => {
           ) : (
             nav.map((link, ind) => (
               <Button
+                variant="text"
+                size="large"
                 style={{ marginRight: ind === nav.length - 1 ? 0 : "2rem" }}
                 onClick={() => navigate(link.link)}
               >

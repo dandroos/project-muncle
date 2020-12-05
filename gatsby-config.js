@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `The Blog from Muncle`,
-    description: `One man's ramblings, waffles and nonsense about web development, dogs, music, mental health and random tosh!`,
+    title: `DevTuts`,
+    description: `Coding tutorials that focus primarily on web development`,
     author: `@prosprwebdev`,
     font: "Overpass",
   },

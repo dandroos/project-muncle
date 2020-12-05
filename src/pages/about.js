@@ -29,14 +29,9 @@ const About = () => {
             musician, OCD maniac and fan of dogs.
           </Typography>
           <Typography paragraph>
-            I now live in Fuerteventura, one of the Canary Islands. I write
-            computer code and teach English to earn my keep and volunteer at my
-            local dog shelter in my spare time.
-          </Typography>
-          <Typography paragraph>
-            I will probably use this space to share some dog photos and write a
-            load of ill-educated, non-sensical and utterly irrelevant bollocks!
-            Sounds tempting, right? :D
+            I now live in Fuerteventura, one of the Canary Islands. I write code
+            and teach English to earn my keep and volunteer at my local dog
+            shelter in my spare time.
           </Typography>
           <SocialBar />
         </Grid>
